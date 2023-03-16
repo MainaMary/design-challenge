@@ -62,19 +62,21 @@ export const featuresList = [
   {
      listOne: ['Account Perfomance Reporting', 'Affiliate Recruiting', 'Affiliate Payments'],
       listTwo: ['Standard', 'Affiliate Marketplace', 'Basic'],
-      background: "blue"
+      background: "blue",
+      title: 'Power features'
     },
   {
       listOne: ['Account Setup', 'Account Management','Account Perfomance Reporting'],
       listTwo: [ 'Onboarding call', 'Dedicated rep','Custom'],
       
-      background:"green"
+      background:"green",
+      title:'Power features'
 
     },
     {
         listOne: ['Account Setup', 'Acoount Management','Account Performance Reporting'],
         listTwo: ['Premium onboarding and migration','Preminum account management','Custom'],
-        
+        title:'Power features',
         background:"purple"
     }
 ]
