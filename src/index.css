@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html {
+    @apply ease-in-out duration-300 scroll-smooth;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-semibold;
+  }
+  h1,
+  h2 {
+    @apply text-sm sm:text-3xl;
+  }
+  h3 {
+    @apply text-sm sm:text-xl;
+  }
+  li {
+    @apply cursor-pointer
+  }
+  button {
+    @apply cursor-pointer rounded-md md:items-center text-black py-2 px-4 text-base  font-semibold 
+  }
+  a {
+  @apply no-underline
+  }
+}
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+*,
+html,
+body {
+  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
+}
+
+
