@@ -4,7 +4,7 @@ import { featuresList } from "../utils/constants";
 
 const Features = () => {
   return (
-    <div className="flex mt-36 w-full md:w-[80%] justify-center m-auto">
+    <div className="block md:flex mt-12 md:mt-36 w-full md:w-[80%] justify-center m-auto">
       {featuresList.map(({ listOne, listTwo, background }, index: number) => {
         const list = listOne.map((name, index) => (
           <div className="flex">
@@ -31,7 +31,7 @@ const Features = () => {
         ));
         
         return (
-          <div key={index} className="flex justify-center m-auto">
+          <div key={index} className="md:flex justify-center m-auto px-12 md:px-0">
            
             <div >
             <p className="font-semibold text-bs mb-4">Power features</p>

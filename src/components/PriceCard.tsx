@@ -30,11 +30,11 @@ export const priceList = [
 ]
 const PriceCard = () => {
   return (
-    <div className='m-auto flex justify-center absolute top-[45%]'>
+    <div className='m-auto flex justify-center md:absolute md:top-[45%] px-12 md:px-0  my-12 md:mt-0'>
         <div className='block md:flex justify-center gap-8 w-full md:w-[70%] m-auto '>
         {
-            priceList.map(({title, subTitle, content, price, btn, background})=>
-            <div className='rounded-md px-4 py-3' style={{background: background === "purple" ? "#d5acd5" : background === "blue" ? "#9fc5e8" : background === "green" ? "#03c04a" :''}}>
+            priceList.map(({title, subTitle, content, price, btn, background}, index:number)=>
+            <div key={index} className='rounded-md px-4 py-3 my-4 md:my-0' style={{background: background === "purple" ? "#d5acd5" : background === "blue" ? "#9fc5e8" : background === "green" ? "#03c04a" :''}}>
                 <h4 className='text-2xl font-semibold'>{title}</h4>
                 <p className='text-sm font-semibold my-4'>{subTitle}</p>
                 <p className='text-sm font-light'>{content}</p>
