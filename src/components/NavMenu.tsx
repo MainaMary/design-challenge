@@ -17,7 +17,7 @@ interface Props {
 const NavMenu = ({ arrList , openModal, handleModal, checker= true}: Props) => {
     console.log(openModal, 'openModal')
   return (
-    <ul className={openModal ? " ease-in-out duration-500 left-0 top-0 bg-white z-20 fixed shadow-md w-[1/2]": "flex h-auto justify-items-end items-center"} style={{width : checker ? '100%' : ''}}>
+    <ul className={openModal ? "flex ease-in-out duration-500 left-0 top-0 bg-white z-20 fixed shadow-md w-[1/2]": "flex h-auto justify-items-end items-center"} style={{width : checker ? '100%' : ''}}>
       {arrList.map(({ label, path, icon }) => (
         <li key={path}>
           <Link to={path} onClick={handleModal} className="flex h-auto justify-items-end items-center px-4">
